@@ -163,6 +163,79 @@ export default function DashboardPage() {
           </div>
         </div>
       )}
+
+      {/* About 5x5 Program */}
+      <Card>
+        <div className="space-y-4">
+          <h2 className="text-lg sm:text-xl font-semibold text-black dark:text-zinc-50">
+            What is StrongLifts 5x5?
+          </h2>
+          <p className="text-sm text-zinc-600 dark:text-zinc-400">
+            A simple, effective strength training program using just 5 compound exercises.
+            Perfect for beginners and intermediates looking to build real strength.
+          </p>
+
+          {/* Workout Structure */}
+          <div className="grid grid-cols-2 gap-3">
+            <div className="p-3 bg-blue-50 dark:bg-blue-950/30 rounded-xl border border-blue-200 dark:border-blue-900">
+              <h3 className="font-semibold text-blue-700 dark:text-blue-400 mb-2">Workout A</h3>
+              <ul className="text-xs text-blue-600 dark:text-blue-300 space-y-1">
+                <li>Squat 5×5</li>
+                <li>Bench Press 5×5</li>
+                <li>Barbell Row 5×5</li>
+              </ul>
+            </div>
+            <div className="p-3 bg-purple-50 dark:bg-purple-950/30 rounded-xl border border-purple-200 dark:border-purple-900">
+              <h3 className="font-semibold text-purple-700 dark:text-purple-400 mb-2">Workout B</h3>
+              <ul className="text-xs text-purple-600 dark:text-purple-300 space-y-1">
+                <li>Squat 5×5</li>
+                <li>Overhead Press 5×5</li>
+                <li>Deadlift 1×5</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* How It Works */}
+          <div className="space-y-3">
+            <h3 className="font-medium text-black dark:text-zinc-50">How It Works</h3>
+            <div className="grid gap-2">
+              <div className="flex items-start gap-3 p-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg">
+                <div className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold shrink-0">1</div>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">
+                  <span className="font-medium text-black dark:text-zinc-200">Train 3x/week</span> — Alternate between Workout A and B with rest days between
+                </p>
+              </div>
+              <div className="flex items-start gap-3 p-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg">
+                <div className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold shrink-0">2</div>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">
+                  <span className="font-medium text-black dark:text-zinc-200">5 sets × 5 reps</span> — Same weight across all sets (except Deadlift: 1×5)
+                </p>
+              </div>
+              <div className="flex items-start gap-3 p-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg">
+                <div className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold shrink-0">3</div>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">
+                  <span className="font-medium text-black dark:text-zinc-200">Add weight</span> — Complete all reps? Add 2.5kg next session
+                </p>
+              </div>
+              <div className="flex items-start gap-3 p-2 bg-zinc-50 dark:bg-zinc-800/50 rounded-lg">
+                <div className="w-6 h-6 rounded-full bg-orange-500 text-white flex items-center justify-center text-xs font-bold shrink-0">!</div>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">
+                  <span className="font-medium text-black dark:text-zinc-200">Deload</span> — Miss reps 3 times in a row? Drop weight by 10%
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Benefits */}
+          <div className="flex flex-wrap gap-2 pt-2">
+            <span className="px-2 py-1 text-xs bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full">Simple</span>
+            <span className="px-2 py-1 text-xs bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full">Progressive</span>
+            <span className="px-2 py-1 text-xs bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full">Full Body</span>
+            <span className="px-2 py-1 text-xs bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full">3x per Week</span>
+            <span className="px-2 py-1 text-xs bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full">~45 min</span>
+          </div>
+        </div>
+      </Card>
     </div>
   );
 }
